@@ -1,0 +1,104 @@
+// let p = true;
+// console.log(p);
+// console.log(typeof(p));
+
+// let q = 19;
+// console.log(q);
+// console.log(typeof(q));
+
+// let s = "yash";
+// console.log(s);
+// console.log(typeof(s));
+
+// let w;
+// console.log(w);
+// w=null;
+// console.log(typeof(w));
+
+// //referance types
+
+// let course = {
+//     title:"HHLD",
+//     description:"projects",
+//     rating:5
+// };
+
+// console.log(course);
+// console.log(typeof(course));
+
+// console.log(course.description)
+
+// let x="yash";
+// let y=x;
+
+// x="yashodeep"
+// console.log(x);
+// console.log(y);
+
+// let p={name : "yashodeep"};
+// let q=p;
+
+// p.name="yash";
+
+// console.log(p);
+// console.log(q);
+
+// let courses =['lld','dsa','ppl',6,true];
+// console.log(courses[0]);
+// console.log(courses[1]);
+// console.log(courses[2]);
+// console.log(courses[3]);
+// console.log(courses[4]);
+
+//functions
+// function createCourse(coursename){
+//     console.log('creating df'+ coursename);
+// }
+
+// createCourse('lld')
+// createCourse('gld')
+
+// let sum = (a,b) => a+b;
+
+// let diff = (a,b) => a-b;
+
+// function operate(operationFunc, a, b){
+//     return operationFunc(a,b);
+// }
+
+// console.log(operate(sum,2,3));
+// console.log(operate(diff,2,3));
+
+// let a=10;
+
+// function outer(){
+//     let count=5;
+//     function inner(){
+//         count++;
+//         console.log(count);
+//     }
+//     return inner;
+// }
+
+// let incrementCounter = outer();
+// incrementCounter();
+// incrementCounter();
+// incrementCounter();
+// incrementCounter();
+
+function fetchData(callback){
+    setTimeout(() => {
+        let data='system loaded';
+        callback(data, null);
+    }, 4000);
+}
+
+function handleData(data,error){
+    if(error){
+        console.error(error);
+    } else {
+        console.log(data);
+    }
+}
+
+fetchData(handleData);
