@@ -4,21 +4,22 @@
 }
 
 body{
-    background-color: #ebf2ff !important ;
+    background-color: rgb(214, 244, 247) !important;
+    background-image: url(https://media.gettyimages.com/id/503886938/vector/multi-coloured-post-it-wall.jpg?s=1024x1024&w=gi&k=20&c=lRTtzQpls-PC2yehcIRkUUlly_rQvjvZ7eNDbF4bRQw=);
+    opacity: 0.9;
 }
-
 .add__new__btn__mobile__only{
     position: fixed;
     bottom: 0;
-    right: 0;
-    padding: 15px 12px;
-    background-color: white;
+    left: 0;
     width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 15px 10px;
     z-index: 3;
 }
-
-@media (min-width: 768px){
+/* 
+@media (min-width: 780px){
     .add__new__btn__mobile__only{
         display: none;
     }
-}
+} */
